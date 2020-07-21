@@ -119,7 +119,7 @@ $ kubelet --version
 > 注意： 为 Master 和 Node 节点单独配置对应的 IP 和 主机名
 
 ### 配置 IP
-编辑 vi /etc/netplan/50-cloud-init.yaml 配置文件，修改内容如下
+编辑 `vi /etc/netplan/50-cloud-init.yaml `配置文件，修改内容如下
 
 ```yml
 network:
@@ -144,6 +144,7 @@ network:
 使用 `netplan apply` 命令让配置生效
 
 ### 配置主机名
+
 ```bash
 # 修改主机名
 hostnamectl set-hostname kubernetes-master
